@@ -1,0 +1,290 @@
+@keyframes animacao{
+    from {box-shadow: 0 0 0 white;}
+    to {
+        box-shadow: 2px 2px 10px lightseagreen;
+        font-size: 1.6em;
+    }
+}
+@keyframes animacao-nav{
+    from{background-color: white;}
+    to{background-color:lightslategray;}
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-image: 
+    linear-gradient(to right bottom, #6babff, #5080d3, #3756a6, #1d307b, #000b51);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 0 0 5px 5px;
+}
+header nav a{
+    padding: 10px;
+    color: black;
+    border-bottom: 2px solid white;
+}
+header nav a:hover{
+    background-color: lightslategray;
+    border-bottom: 2px solid black;
+    color: white;
+    animation-name: animacao-nav;
+    animation-duration: .6s;
+}
+header div{
+margin-top: 200px;
+color: white;
+}
+header h1{
+    font-size: 3.5em;
+}
+header h2{
+    font-size: 2.5em;
+}
+header p{
+    margin-top: 100px;
+}
+header p a{
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+header p a:hover{
+    background-color: lightseagreen;
+    box-shadow: 2px 2px 10px lightseagreen;
+    animation-name: animacao;
+    animation-duration: .3s;
+    font-size: 1.6em;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.1em;
+}
+hr{
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid lightslategray;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    color: white;
+}
+.box{
+    padding: 20px;
+    min-height: 200px;
+}
+.mini-box{
+    border: 1px solid lightgray;
+    padding: 20px;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.primeiro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.primeiro p{
+    width: 50%;
+}
+.segundo h3{
+    text-align: center;
+}
+.terceiro h3{
+    text-align: center;
+}
+.quarto h3{
+    text-align: center;
+}
+.box-card{
+    display: flex;
+    justify-content: center;
+
+}
+.card{
+    height: 400px;
+    min-height: 400px;
+    width: 400px;
+    border: 2px solid lightgrey;
+    margin: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+.card p{
+    text-align: center;
+    padding: 10px;
+    /* margin: 5px; */
+}
+.card-img{
+    height: 80%;
+    width: 100%;
+    background-color: white;
+}
+.card-img h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.quinto h3,h4{
+    text-align: center;
+}
+.quinto div{
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.quinto img{
+    width: 100px;
+    margin: 20px;
+}
+.sexto h3{
+    text-align: center;
+}
+.sexto section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.sexto section a{
+    color: black;
+    border-bottom: 1px solid white;
+}
+.sexto section a:hover{
+    border-bottom: 1px solid black;
+}
+.contato p{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.contato img{
+    width:20px;
+    margin-right: 10px;
+}
+
+.homem img{
+    width: 200px;
+}
+#arrow img{
+    width: 40px;
+    background-color: white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media (max-width:600px){
+    header{
+        display: flex;
+        flex-direction: column;
+        min-height: 750px;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    header h1{
+        font-size: 2.5em;
+    }
+    header h2{
+        font-size: 1.7em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .mini-box{
+        width: 100%;
+    }
+    .quarto{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .box-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+    }
+    .homem img{
+        width: 150px;
+    }
+    }
+    @media (min-width:600px) and (max-width:1050px){
+        header nav{
+            width: 100%;
+            border-radius: 0;
+        }
+        header h1{
+            font-size: 2.5em;
+        }
+        header h2{
+            font-size: 1.7em;
+        }
+        h3{
+            font-size: 1.5em;
+        }
+        .box-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card{
+            width: 70%;
+        }
+        .quinto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+        .quinto div{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 20%;
+        }
+        .homem img{
+            width: 150px;
+        }
+}
